@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Java-Buddy: Google Maps</title>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<style>#mapcanvas { height: 360px; width: 100%}</style>
+
+<script>
+var map;
+function loadmap(){
+
+  var options = {
+      zoom: 16,
+      center: new google.maps.LatLng(-26.207100, 28.044770),
+      mapTypeId: google.maps.MapTypeId.SATELLITE
+  }
+  map = new google.maps.Map(document.getElementById("mapcanvas"), options);
+}
+
+</script>
+
+</head>
+<body onload="loadmap()">
+<div id="mapcanvas"></div>
+</body>
+</html>
